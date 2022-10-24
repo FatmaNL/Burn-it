@@ -32,6 +32,7 @@
         android:layout_below="@id/imageView"
         android:layout_marginTop="222dp"
         android:hint="Password"
+        android:inputType="textPassword"
         android:textSize="25dp" />
 
     <Button
@@ -39,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/passwordlogin"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="30dp"
         android:backgroundTint="@android:color/holo_blue_dark"
         android:text="Login"
         android:textAllCaps="false"
