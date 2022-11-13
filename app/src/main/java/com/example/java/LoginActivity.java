@@ -30,7 +30,6 @@ public class LoginActivity extends AppCompatActivity {
     EditText username,password;
     Button btnlogin;
     DBHelper myDB;
-    ImageView imageView;
     GoogleSignInClient mGoogleSignInClient;
     private static int RC_SIGN_IN=100;
     @Override
@@ -40,7 +39,6 @@ public class LoginActivity extends AppCompatActivity {
         username=(EditText) findViewById(R.id.usernamelogin);
         password=(EditText) findViewById(R.id.passwordlogin);
         btnlogin=(Button) findViewById(R.id.btnlogin);
-        imageView= findViewById(R.id.imageView);
         myDB=new DBHelper(this);
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
@@ -87,7 +85,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    public void signIn() {
+    private void signIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, RC_SIGN_IN);
     }

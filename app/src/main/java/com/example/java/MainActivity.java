@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 EditText username,password,repassword;
  Button btnSignIn,btnSignUp;
+   Button btnsms;
  DBHelper myDB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,7 @@ EditText username,password,repassword;
         username=(EditText) findViewById(R.id.username);
         password=(EditText) findViewById(R.id.password);
         repassword=(EditText) findViewById(R.id.repassword);
-
+        btnsms=(Button) findViewById(R.id.btnsms);
         btnSignIn=(Button) findViewById(R.id.btnSignIn);
         btnSignUp=(Button) findViewById(R.id.btnSignUp);
 
@@ -75,6 +76,13 @@ EditText username,password,repassword;
                Intent intent= new Intent(getApplicationContext(),LoginActivity.class);
                startActivity(intent);
 
+           }
+       });
+       btnsms.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intent= new Intent(getApplicationContext(),SmsActivity.class);
+               startActivity(intent);
            }
        });
     }

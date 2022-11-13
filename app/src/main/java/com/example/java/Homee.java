@@ -9,11 +9,13 @@ import android.widget.Button;
 
 public class Homee extends AppCompatActivity {
 Button btnpracticehome;
+Button calcul;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homee);
         btnpracticehome=(Button) findViewById(R.id.btnpracticehome);
+        calcul=(Button) findViewById(R.id.calcul);
         btnpracticehome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -22,5 +24,12 @@ Button btnpracticehome;
 
             }
         });
+calcul.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent intent= new Intent(getApplicationContext(),CalculActivity.class);
+        startActivity(intent);
+    }
+});
     }
 }
