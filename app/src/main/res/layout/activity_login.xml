@@ -4,25 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/log"
+    android:background="@drawable/logiiin"
     tools:context=".LoginActivity">
-
 
 
     <EditText
         android:id="@+id/usernamelogin"
-        android:layout_width="match_parent"
+        android:layout_width="358dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_marginTop="120dp"
-        android:hint="Username"
 
+        android:layout_marginEnd="16dp"
+        android:hint="Username"
         android:textSize="25dp" />
 
     <EditText
         android:id="@+id/passwordlogin"
-        android:layout_width="match_parent"
+        android:layout_width="354dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="222dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="26dp"
         android:hint="Password"
         android:inputType="textPassword"
         android:textSize="25dp" />

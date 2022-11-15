@@ -19,9 +19,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Java"
         tools:targetApi="31">
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBgxBhoEJq2l0-z3rrtNTuB2txyY3OIrD0"></meta-data>
+            android:value="AIzaSyBgxBhoEJq2l0-z3rrtNTuB2txyY3OIrD0" />
+
         <activity
             android:name=".MapsActivity"
             android:exported="false">
@@ -36,8 +38,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
-
         <activity
             android:name=".WomenExercices2"
             android:exported="false">
