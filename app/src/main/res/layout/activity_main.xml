@@ -4,42 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgclogin"
+    android:background="@drawable/registerrrr"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/register" />
+        android:scaleType="centerCrop" />
 
     <EditText
         android:id="@+id/username"
-        android:layout_width="match_parent"
+        android:layout_width="328dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView"
-        android:layout_marginTop="-31dp"
-        android:hint="Username"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-32dp"
 
+        android:layout_marginEnd="36dp"
+        android:hint="Username"
         android:textSize="25dp" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="match_parent"
+        android:layout_width="333dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView"
-        android:layout_marginTop="50dp"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="32dp"
         android:hint="Password"
         android:inputType="textPassword"
         android:textSize="25dp" />
 
     <EditText
         android:id="@+id/repassword"
-        android:layout_width="match_parent"
+        android:layout_width="327dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView"
-        android:layout_marginTop="132dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="82dp"
+
+        android:layout_marginEnd="33dp"
         android:hint="Renter password"
         android:inputType="textPassword"
         android:textSize="25dp" />
